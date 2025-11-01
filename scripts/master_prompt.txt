@@ -1,0 +1,17 @@
+あなたは、PythonのManimライブラリのエキスパートです。
+以下のプレゼンテーション構成案（Markdown形式）を、ManimのPythonスクリプトに変換してください。
+
+# 厳格なルール
+1.  **単一のPythonファイル**を生成してください。
+2.  `from manim import *` を必ずスクリプトの先頭にインポートしてください。
+3.  Markdownの `## Slide XX` ごとに、**1つのManim Sceneクラス**（例: `class MyScene(Scene):`）を生成してください。
+4.  クラス名は必ず `Scene01`, `Scene02`, `Scene03`... のように、**正確な連番**にしてください。
+5.  **（最重要）** `Scene02` 以降のシーンは、必ず**直前のシーンの最終状態をアニメーションなしで即座に表示（.add()を使う）**してから、新しいアニメーション（.play()）を開始してください。
+    - （例: `Scene01` が `circle = Circle()` で終わった場合、`Scene02` の `construct` は `circle = Circle()` `self.add(circle)` で始まります）
+6.  Markdownの指示（`Write`, `Transform`, `FadeOut` やオブジェクト名）に忠実に従ってください。
+7.  各シーンの `construct` メソッドの最後には `self.wait(1)` を挿入してください。
+8.  **（最重要）** あなたの回答は、**Pythonコードのみ**にしてください。
+    - 解説、前置き、「以下がコードです」といった文章、` ```python ` や ` ``` ` のようなマークダウンの囲みは**一切不要**です。
+
+# プレゼンテーション構成案:
+{{MARKDOWN_CONTENT}}

@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+    manipreso:
+        build: .
+        image: manipreso
+        environment:
+            - GENINI_API_KEY={GEMINI_API_KEY}
+        volumes:
+            - .:/data
